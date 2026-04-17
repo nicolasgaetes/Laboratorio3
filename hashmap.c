@@ -73,7 +73,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     //calculo la posicion inicial
     long index = hash(key, map->capacity);
     //guardo el indice inicial
-    long start = index;
+
     //mientras la posicion actual NO sea NULL
     while (map->buckets[index] != NULL) {
         //comparo la clave almacenada en esa pos con la clave buscada
@@ -86,7 +86,7 @@ Pair * searchMap(HashMap * map,  char * key) {
         //si no era la clave, avanzo a la siguiente pos
         index = (index + 1) % map->capacity;
         //si volvi al indice inicial y no se encontro nada, hago break
-        if (index == start) break;
+        
     }
     //la clave no esta en el mapa
     return NULL;
