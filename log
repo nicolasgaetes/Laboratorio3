@@ -115,3 +115,13 @@ hashmap.c:189:32: error: subscripted value is neither array nor pointer nor vect
       |                                ^
 cc1: all warnings being treated as errors
 bd60614
+Sun Apr 19 02:30:53 AM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:189:32: error: subscripted value is neither array nor pointer nor vector
+  189 |             return map->current[index];
+      |                                ^
+60af374
