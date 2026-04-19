@@ -101,3 +101,17 @@ Sun Apr 19 02:28:52 AM UTC 2026:
  tests:  13|2
 total_score: 40/60
 51862b9
+Sun Apr 19 02:30:33 AM UTC 2026: 
+ hashmap.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:187:33: error: suggest parentheses around comparison in operand of ‘&’ [-Werror=parentheses]
+  187 |         if (map->buckets[index] != NULL & map->buckets[index]->key != NULL) {
+      |                                 ^
+hashmap.c:189:32: error: subscripted value is neither array nor pointer nor vector
+  189 |             return map->current[index];
+      |                                ^
+cc1: all warnings being treated as errors
+bd60614
