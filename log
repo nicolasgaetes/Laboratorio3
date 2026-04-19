@@ -171,3 +171,9 @@ hashmap.c:226:25: error: subscripted value is neither array nor pointer nor vect
   226 |         if (old_capacity[i] != NULL && old_buckets[i]->key != NULL) {
       |                         ^
 59d5337
+Sun Apr 19 02:39:34 AM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|0
+total_score: 60/60
+4f8dfb9
