@@ -221,7 +221,13 @@ void enlarge(HashMap * map) {
     for (long i = 0 ; i < map->capacity; i++) {
         map->buckets[i] = NULL;
     }
-
+    map->size = 0;
+    for (long i = 0; i < old_capacity; i++) {
+        if (old_capacity[i] != NULL && old_buckets[i]->key != NULL) {
+            insertMap(map, old_buckets[i]->key, old_buckets[i]->value);
+        }
+    }
+    
 
 }
 
