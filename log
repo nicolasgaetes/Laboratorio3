@@ -161,3 +161,13 @@ hashmap.c:226:25: error: subscripted value is neither array nor pointer nor vect
   226 |         if (old_capacity[i] != NULL && old_buckets[i]->key != NULL) {
       |                         ^
 730dcff
+Sun Apr 19 02:39:09 AM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:226:25: error: subscripted value is neither array nor pointer nor vector
+  226 |         if (old_capacity[i] != NULL && old_buckets[i]->key != NULL) {
+      |                         ^
+59d5337
