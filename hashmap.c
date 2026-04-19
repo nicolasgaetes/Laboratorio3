@@ -145,7 +145,7 @@ void eraseMap(HashMap * map,  char * key) {
             return;
         }
         if (map->buckets[index]->key != NULL && is_equal(map->buckets[index]->key, key)) {
-            map->buckets[index]->key == NULL;
+            map->buckets[index]->key = NULL;
             map->size--;
             return;
         }
