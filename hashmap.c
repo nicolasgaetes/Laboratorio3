@@ -139,7 +139,18 @@ Pair * searchMap(HashMap * map,  char * key) {
 // Recuerde actualizar la variable size.
 
 void eraseMap(HashMap * map,  char * key) {    
-
+    long index = hash(key, map->capacity);
+    for (long i = 0; i < map->capacity ; i++){
+        if (map->buckets[index] == NULL){
+            return;
+        }
+        if (map->buckets[index]->key != NULL && is_equal(map->buckets[index]->key, key)) {
+            map->buckets[index]->key == NULL;
+            map->size--;
+            return;
+        }
+        index = (index + 1) % map->capacity;
+    }
 
 }
 
